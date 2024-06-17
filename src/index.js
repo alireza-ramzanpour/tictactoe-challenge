@@ -86,7 +86,6 @@ export const ExampleComponent = () => {
   return (
     <div>
       <div className={styles.container}>
-        <img src={circle_icon} />
         <h1 className={styles.title} ref={titleRef}>
           Tic Tac Toe Game
         </h1>
