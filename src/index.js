@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react'
 import styles from './styles.module.css'
-import circle_icon from './assets/images/Circle.png'
-import cross_icon from './assets/images/Red_X.png'
+import circle_icon from 'assets/images/Circle.png'
+import cross_icon from 'assets/images/Red_X.png'
 
 let data = ["", "", "", "", "", "", "", "", ""]
 
-export const ExampleComponent = () => {
+export const TicTacToe = () => {
 
   let [count, setCount] = useState(0)
   let [lock, setLock] = useState(false)
@@ -90,17 +90,17 @@ export const ExampleComponent = () => {
           Tic Tac Toe Game
         </h1>
         <div className={styles.board}>
-          <div className={styles.row1}>
+          <div className={styles.row}>
             <div className={styles.boxes} ref={box1} onClick={(e) => { toggle(e, 0) }}></div>
             <div className={styles.boxes} ref={box2} onClick={(e) => { toggle(e, 1) }}></div>
             <div className={styles.boxes} ref={box3} onClick={(e) => { toggle(e, 2) }}></div>
           </div>
-          <div className={styles.row2}>
+          <div className={styles.row}>
             <div className={styles.boxes} ref={box4} onClick={(e) => { toggle(e, 3) }}></div>
             <div className={styles.boxes} ref={box5} onClick={(e) => { toggle(e, 4) }}></div>
             <div className={styles.boxes} ref={box6} onClick={(e) => { toggle(e, 5) }}></div>
           </div>
-          <div className={styles.row3}>
+          <div className={styles.row}>
             <div className={styles.boxes} ref={box7} onClick={(e) => { toggle(e, 6) }}></div>
             <div className={styles.boxes} ref={box8} onClick={(e) => { toggle(e, 7) }}></div>
             <div className={styles.boxes} ref={box9} onClick={(e) => { toggle(e, 8) }}></div>
